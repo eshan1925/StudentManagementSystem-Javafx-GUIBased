@@ -58,6 +58,11 @@
             <VBox layoutY="200.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #a12121;" />
             <VBox layoutX="100.0" layoutY="284.0" prefHeight="115.0" prefWidth="100.0" style="-fx-background-color: #fffff2;" />
             <PasswordField fx:id="password" layoutX="287.0" layoutY="247.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 8px;" />
+            <Button fx:id="signup" layoutX="445.0" layoutY="321.0" mnemonicParsing="false" onAction="#signupUser" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Sign-Up" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
       </children>
     </AnchorPane>
   </children>
