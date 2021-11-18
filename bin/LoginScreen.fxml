@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginSceneController">
+  <children>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2e2a29;" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="156.0" layoutY="20.0" prefHeight="22.0" prefWidth="327.0" text="STUDENT MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="62.0" text="Welcome to student management system Login Area , Please enter the credentials to enter the student's marks" textFill="WHITE" />
+            <Label layoutX="274.0" layoutY="112.0" prefHeight="23.0" prefWidth="116.0" text="Login Screen" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.1102230246251565E-16" blue="1.1102230246251565E-16" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8736842274665833" green="0.7669005990028381" blue="0.7669005990028381" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="171.0" layoutY="212.0" text="User ID" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Label layoutX="171.0" layoutY="251.0" text="Password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font></Label>
+            <Button fx:id="logIn" layoutX="539.0" layoutY="321.0" mnemonicParsing="false" onAction="#loginUser" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Log-In" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <TextField fx:id="userId" layoutX="287.0" layoutY="207.0" promptText="Enter ID" style="-fx-background-color: white; -fx-background-radius: 8px;" />
+            <VBox layoutY="200.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #a12121;" />
+            <VBox layoutX="100.0" layoutY="284.0" prefHeight="115.0" prefWidth="100.0" style="-fx-background-color: #fffff2;" />
+            <PasswordField fx:id="password" layoutX="287.0" layoutY="247.0" promptText="Password" style="-fx-background-color: white; -fx-background-radius: 8px;" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
