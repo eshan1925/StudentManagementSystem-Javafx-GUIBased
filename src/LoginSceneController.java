@@ -16,8 +16,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
-
-public class LoginSceneController{
+public class LoginSceneController {
 
     @FXML
     private Button logIn;
@@ -34,24 +33,30 @@ public class LoginSceneController{
     Connection con;
     PreparedStatement pst;
     ResultSet rs;
+
     @FXML
     void loginUser(ActionEvent event) {
         String a = userId.getText();
         String b = password.getText();
-        if(a.equals("") && b.equals("")){
+        if (a.equals("") && b.equals("")) {
             JOptionPane.showMessageDialog(null, "Username or Password Blank", "Ooooops!!!", 0);
-        }else{
+        } else {
             try {
                 Class.forName("com.mysql.cj.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_db", "eshan","eventour2020");
+                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_db", "eshan", "eventour2020");
                 pst = con.prepareStatement("select * from users where username_=? and password_=?");
                 pst.setString(1, a);
                 pst.setString(2, b);
                 rs = pst.executeQuery();
-                if(rs.next()){
-                    JOptionPane.showMessageDialog(null,"Success","Login Success",1);
-                }else{
-                    JOptionPane.showMessageDialog(null,"Check the credentials","Login Failure",0);
+                if (rs.next()) {
+                    JOptionPane.showMessageDialog(null, "Success", "Login Success", 1);
+                    Parent root = FXMLLoader.load(getClass().getResource("MarksDetails.fxml"));
+                    Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+                    Scene scene = new Scene(root);
+                    stage.setScene(scene);
+                    stage.show();
+                } else {
+                    JOptionPane.showMessageDialog(null, "Check the credentials", "Login Failure", 0);
                     userId.setText("");
                     password.setText("");
                     userId.requestFocus();
@@ -60,13 +65,13 @@ public class LoginSceneController{
                 System.out.println(e);
             }
         }
-        
+
     }
 
     @FXML
     void signupUser(ActionEvent event) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("SignUpScreen.fxml"));
-        Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
         Scene scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
