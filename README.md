@@ -1,4 +1,4 @@
-#<div align=center> StudentManagementSystem </div>
+# <div align=center> StudentManagementSystem </div>
 
 ## Getting Started
 
