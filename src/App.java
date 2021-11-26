@@ -18,7 +18,7 @@ public class App extends Application {
             System.out.println(e);
         }
     }
- 
+    
  public static void main(String[] args) {
         launch(args);
     }

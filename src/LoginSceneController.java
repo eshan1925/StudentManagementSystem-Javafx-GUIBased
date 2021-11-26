@@ -49,7 +49,7 @@ public class LoginSceneController {
                 rs = pst.executeQuery();
                 if (rs.next()) {
                     JOptionPane.showMessageDialog(null, "Success", "Login Success", 1);
-                    Parent root = FXMLLoader.load(getClass().getResource("MarksDetails.fxml"));
+                    Parent root = FXMLLoader.load(getClass().getResource("OptionScreen.fxml"));
                     Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
                     Scene scene = new Scene(root);
                     stage.setScene(scene);
