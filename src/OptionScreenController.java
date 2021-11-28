@@ -45,7 +45,7 @@ public class OptionScreenController {
 
     @FXML
     void quit(ActionEvent event) {
-        JOptionPane.showMessageDialog(null, "Thankyou", "Student Management System", 1);
+        
         System.exit(0);
     }
 

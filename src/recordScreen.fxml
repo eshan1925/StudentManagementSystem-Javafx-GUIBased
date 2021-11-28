@@ -25,12 +25,12 @@
                   <Font name="System Bold" size="15.0" />
                </font>
             </Label>
-            <Button fx:id="exit" layoutX="360.0" layoutY="303.0" mnemonicParsing="false" onAction="#quit" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+            <Button fx:id="viewall" layoutX="366.0" layoutY="342.0" mnemonicParsing="false" onAction="#viewallrecord" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View All Record" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="viewrec" layoutX="509.0" layoutY="303.0" mnemonicParsing="false" onAction="#viewrecord" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Record" textAlignment="CENTER">
+            <Button fx:id="viewrec" layoutX="510.0" layoutY="342.0" mnemonicParsing="false" onAction="#viewrecord" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Record" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -68,7 +68,17 @@
             </Label>
             <TextField fx:id="studentname" layoutX="143.0" layoutY="132.0" promptText="Enter Name" style="-fx-background-color: white; -fx-background-radius: 8px;" />
             <TextField fx:id="registrationnumber" layoutX="464.0" layoutY="132.0" promptText="Enter Reg. No." style="-fx-background-color: white; -fx-background-radius: 8px;" />
-            <TableView fx:id="table" layoutX="51.0" layoutY="176.0" prefHeight="75.0" prefWidth="536.0" style="-fx-background-radius: 5px;" />
+            <TableView fx:id="table" layoutX="51.0" layoutY="176.0" prefHeight="144.0" prefWidth="536.0" style="-fx-background-radius: 5px;" />
+            <Button fx:id="exit1" layoutX="31.0" layoutY="342.0" mnemonicParsing="false" onAction="#quit" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="clear" layoutX="218.0" layoutY="342.0" mnemonicParsing="false" onAction="#clearall" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Clear All" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </children>
