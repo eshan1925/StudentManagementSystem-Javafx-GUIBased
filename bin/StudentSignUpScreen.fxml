@@ -11,7 +11,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUpSceneController">
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentSignUpSceneController">
    <children>
       <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2e2a29;" VBox.vgrow="ALWAYS">
          <children>
@@ -20,8 +20,8 @@
                   <Font name="Broadway" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="35.0" layoutY="62.0" text="Welcome to student management system Sign-up Area , Please enter the credentials to create new Account" textFill="WHITE" />
-            <Label layoutX="254.0" layoutY="89.0" prefHeight="23.0" prefWidth="130.0" text="Sign-Up Screen" textAlignment="CENTER">
+            <Label layoutX="17.0" layoutY="62.0" text="Welcome to student management system Sign-up Area , Please enter the credentials to create new Student Account" textFill="WHITE" />
+            <Label layoutX="222.0" layoutY="88.0" prefHeight="23.0" prefWidth="196.0" text="Student Sign-Up Screen" textAlignment="CENTER">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="19.0" />
                </font>

@@ -20,7 +20,7 @@
                   <Font name="Broadway" size="18.0" />
                </font>
             </Label>
-            <Label layoutX="26.0" layoutY="62.0" text="Welcome to student management system Sign-up Area , Please enter the credentials to create new Account" textFill="WHITE" />
+            <Label layoutX="35.0" layoutY="62.0" text="Welcome to student management system Sign-up Area , Please enter the credentials to create new Account" textFill="WHITE" />
             <Label layoutX="254.0" layoutY="89.0" prefHeight="23.0" prefWidth="130.0" text="Sign-Up Screen" textAlignment="CENTER">
                <font>
                   <Font name="Berlin Sans FB Demi Bold" size="19.0" />

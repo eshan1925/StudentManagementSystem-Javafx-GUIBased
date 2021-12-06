@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="StudentOptionScreenController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #2e2a29;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="166.0" layoutY="20.0" prefHeight="22.0" prefWidth="327.0" text="STUDENT MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="70.0" layoutY="66.0" text="Welcome to Student Management System. Please select what you wish to do." textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="exit" layoutX="280.0" layoutY="234.0" mnemonicParsing="false" onAction="#quit" prefHeight="22.0" prefWidth="81.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="newrecord" layoutX="142.0" layoutY="142.0" mnemonicParsing="false" onAction="#enterrecord" prefHeight="47.0" prefWidth="131.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Marks" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="viewrec" layoutX="377.0" layoutY="142.0" mnemonicParsing="false" onAction="#viewrecord" prefHeight="47.0" prefWidth="131.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="LogOut" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <VBox layoutY="212.0" prefHeight="200.0" prefWidth="100.0" style="-fx-background-color: #a12121;" />
+            <VBox layoutX="100.0" layoutY="292.0" prefHeight="121.0" prefWidth="100.0" style="-fx-background-color: #fffff2;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

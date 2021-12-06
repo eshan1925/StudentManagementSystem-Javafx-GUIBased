@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewStudentRecordScreenController">
+   <children>
+      <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="476.0" prefWidth="751.0" style="-fx-background-color: #2e2a29;" VBox.vgrow="ALWAYS">
+         <children>
+            <Label layoutX="166.0" layoutY="20.0" prefHeight="22.0" prefWidth="327.0" text="STUDENT MANAGEMENT SYSTEM" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Broadway" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="66.0" text="Welcome to Student Management System. Please enter details to view record" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="viewrec" layoutX="510.0" layoutY="342.0" mnemonicParsing="false" onAction="#viewrecord" prefHeight="39.0" prefWidth="104.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Record" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="240.0" layoutY="101.0" prefHeight="23.0" prefWidth="160.0" text="Student's Details" textAlignment="CENTER">
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="19.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="1.1102230246251565E-16" blue="1.1102230246251565E-16" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.8736842274665833" green="0.7669005990028381" blue="0.7669005990028381" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label layoutX="76.0" layoutY="134.0" text="Name " textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="288.0" layoutY="135.0" text="Registration Number" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="studentname" layoutX="127.0" layoutY="132.0" promptText="Enter Name" style="-fx-background-color: white; -fx-background-radius: 8px;" />
+            <TextField fx:id="registrationnumber" layoutX="435.0" layoutY="131.0" promptText="Enter Reg. No." style="-fx-background-color: white; -fx-background-radius: 8px;" />
+            <TableView fx:id="table" layoutX="51.0" layoutY="176.0" prefHeight="86.0" prefWidth="536.0" style="-fx-background-radius: 5px;" />
+            <Button fx:id="exit1" layoutX="31.0" layoutY="342.0" mnemonicParsing="false" onAction="#quit" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Go Back" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
