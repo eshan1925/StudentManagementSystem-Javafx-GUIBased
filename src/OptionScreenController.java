@@ -45,7 +45,6 @@ public class OptionScreenController {
 
     @FXML
     void quit(ActionEvent event) {
-        
         System.exit(0);
     }
 

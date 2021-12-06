@@ -69,7 +69,7 @@
             <TextField fx:id="studentname" layoutX="143.0" layoutY="132.0" promptText="Enter Name" style="-fx-background-color: white; -fx-background-radius: 8px;" />
             <TextField fx:id="registrationnumber" layoutX="464.0" layoutY="132.0" promptText="Enter Reg. No." style="-fx-background-color: white; -fx-background-radius: 8px;" />
             <TableView fx:id="table" layoutX="51.0" layoutY="176.0" prefHeight="144.0" prefWidth="536.0" style="-fx-background-radius: 5px;" />
-            <Button fx:id="exit1" layoutX="31.0" layoutY="342.0" mnemonicParsing="false" onAction="#quit" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+            <Button fx:id="exit1" layoutX="31.0" layoutY="342.0" mnemonicParsing="false" onAction="#quit" prefHeight="39.0" prefWidth="111.0" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Go Back" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

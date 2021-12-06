@@ -110,7 +110,12 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="exit" layoutX="65.0" layoutY="354.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+            <Button fx:id="exit" layoutX="65.0" layoutY="354.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Go back" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="update" layoutX="266.0" layoutY="354.0" mnemonicParsing="false" onAction="#updaterecord" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Update Record" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>

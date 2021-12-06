@@ -17,6 +17,9 @@ import javafx.scene.Node;
 public class SignUpSceneController {
 
     @FXML
+    private TextField Vcode;
+
+    @FXML
     private Button logIn;
 
     @FXML
@@ -53,10 +56,12 @@ public class SignUpSceneController {
         String a = userId.getText();
         String b = password.getText();
         String c = name.getText();
+        String d = Vcode.getText();
         if (a.equals("") || b.equals("") || c.equals("")) {
             JOptionPane.showMessageDialog(null, "One or more fields Blank", "Ooooops!!!", 0);
         } else {
             try {
+                if( d.equals("admin123")){
                 Class.forName("com.mysql.cj.jdbc.Driver");
                 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/student_db", "eshan",
                         "eventour2020");
@@ -65,6 +70,9 @@ public class SignUpSceneController {
                 JOptionPane.showMessageDialog(null, "Registered new user Successfully", "Login Success", 1);
                 System.out.println("Success");
                 s.executeUpdate(s1);
+                }else{
+                    JOptionPane.showMessageDialog(null, "Invalid Verification Code", "Unauthorised personnel!!!", 0);
+                }
             } catch (Exception e) {
                 System.out.println(e);
             }

@@ -63,12 +63,12 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="exit" layoutX="65.0" layoutY="354.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Quit" textAlignment="CENTER">
+            <Button fx:id="exit" layoutX="65.0" layoutY="354.0" mnemonicParsing="false" onAction="#quit" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="Go Back" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="newrecord1" layoutX="376.0" layoutY="354.0" mnemonicParsing="false" onAction="#enternewrecord" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Record" textAlignment="CENTER">
+            <Button fx:id="newrecord1" layoutX="376.0" layoutY="354.0" mnemonicParsing="false" onAction="#viewrecord" style="-fx-background-color: #fc6e4e; -fx-background-radius: 8;" text="View Record" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
